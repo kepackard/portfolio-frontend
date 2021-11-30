@@ -1,5 +1,7 @@
 function Footer(props) {
-    return <h1>Footer</h1>
-}
+    return (
+    <footer className="Made by KPH &copy; 2021."></footer>
+    )
+};
 
 export default Footer;

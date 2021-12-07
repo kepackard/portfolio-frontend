@@ -1,55 +1,34 @@
-// <link rel="preconnect" href="https://fonts.googleapis.com">
-// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-// <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-// CSS rules to specify families
-
-// font-family: 'Suez One', serif;
-
-// <style>
-// @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
-// </style>
-
-// CSS rules to specify families
-
-// font-family: 'Suez One', serif;
-
-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  background-color:rgb(237, 250, 250);
-}
-
-
 // --------------------------
 // VARIABLES
 // --------------------------
-$maincolor: black;
-$contrastcolor: white;
+$darkest: rgb(67,68,99);
+$lightpurple: rgb(92,94,117); 
+$foam: rgb(245, 241, 224);
+$vanilla: rgb(238, 231, 189);
+$greysea: rgb(196,205,202);
+$mainfont: 'Times';
+$specialfont: 'Suez One', serif;
 
-@mixin white-text-black-bg {
-  color: $contrastcolor;
-  background-color: $maincolor;
-}
+// <link rel="preconnect" href="https://fonts.googleapis.com">
+// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+// <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
 
-@mixin black-text-white-bg {
-  color: $maincolor;
-  background-color: $contrastcolor;
-}
+// CSS rules to specify families
 
-@mixin white-text-teal-bg {
-  color: white;
-  background-color: teal;
-}
+// font-family: 'Suez One', serif;
 
-// --------------------------
+
 // Header
-// --------------------------
 
 nav {
-  @include white-text-teal-bg;
+  color: $vanilla;
+  background-color: $darkest;
   display: flex;
   justify-content: space-between;
-
+  font-family: 'Suez One', serif;
+  padding: 25px;
+  margin: 0px;
+  
   a {
     text-decoration: none;
     color: white;
@@ -61,4 +40,105 @@ nav {
   }
 }
 
-// footer 
+// Main
+
+.item-1 {
+  grid-area: hi;
+  text-align: center;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 30px;
+  margin: 25px;
+  font-family: 'Suez One', serif;
+  justify-self: center;
+}
+
+.item-2 {
+  grid-area: avatar;
+  text-align: center;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 30px;
+  margin: 25px;
+  font-family: sans-serif;
+  justify-self: center;
+}
+
+.item-3 {
+  grid-area: blurb;
+  text-align: center;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 30px;
+  margin: 25px;
+  font-family: sans-serif;
+  justify-self: center;
+}
+
+body {
+  background-color:$foam;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $mainfont, serif;
+  // background-image: url('https://i.imgur.com/pwMiCg7.jpg');
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ' . hi hi hi . '
+    '. blurb blurb blurb .'
+    '. . avatar . .';
+}
+
+// About Me
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ' . . about . . '
+    '. about-2 about-2 about-2 .';
+}
+
+h3 {
+  grid-area: 'about';
+  font-family: $specialfont, serif;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 30px;
+  margin: 25px;
+  // justify-self: center;
+}
+
+h4 {
+  grid-area: 'about-2';
+  color: $lightpurple;
+  font-family: 'Helvetica';
+}
+
+// Footer
+footer {
+  color: white;
+  text-align: center;
+  background-color: $darkest;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  font-family: $specialfont;
+}
+
+// sticky footer
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 500vh;
+}

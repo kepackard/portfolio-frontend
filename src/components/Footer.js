@@ -1,6 +1,6 @@
 function Footer(props) {
     return (
-    <footer className="Made by KPH &copy; 2021."></footer>
+    <footer>Made by KPH</footer>
     )
 };
 

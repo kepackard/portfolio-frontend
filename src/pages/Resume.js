@@ -3,7 +3,6 @@ function Resume(props) {
         <div>
             <h1>My Resume</h1>
             <h4>You can also download a copy here</h4>
-
             <div>TECHNICAL SKILLS
                 <ul>
                     <li>HTML and CSS</li>

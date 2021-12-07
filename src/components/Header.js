@@ -2,22 +2,22 @@ import { Link } from "react-router-dom";
 
 function Header(props) {
     return (
-        <header>
+        <header className="outer-header">
             <nav className="nav">
                 <Link to="/">
-                    <div>HOME</div>
+                <h4>HOME</h4>
                 </Link>
                 <Link to='/about'>
-                <h4>About Me</h4>
+                <h4>ABOUT ME</h4>
                 </Link>
                 <Link to='/portfolio'>
-                <h4>Portfolio</h4>
+                <h4>PORTFOLIO</h4>
                 </Link>
                 <Link to='/resume'>
-                <h4>Resume</h4>
+                <h4>RESUME</h4>
                 </Link>
                 <Link to='/contact'>
-                <h4>Contact Me</h4>
+                <h4>CONTACT ME</h4>
                 </Link>
             </nav>
         </header>

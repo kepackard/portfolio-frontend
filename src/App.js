@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Footer from "./components/Footer";
 import "./styles.scss";
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <Footer />
     </div>
   )
 };

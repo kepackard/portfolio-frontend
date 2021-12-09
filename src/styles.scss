@@ -21,13 +21,14 @@ $specialfont: 'Suez One', serif;
 // Header
 
 nav {
-  color: $vanilla;
+  color: white;
   background-color: $darkest;
   display: flex;
   justify-content: space-between;
   font-family: 'Suez One', serif;
   padding: 25px;
   margin: 0px;
+  font-size: x-large;
   
   a {
     text-decoration: none;
@@ -54,6 +55,18 @@ nav {
   justify-self: center;
 }
 
+.item-3 {
+  grid-area: blurb;
+  text-align: center;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 30px;
+  margin: 25px;
+  font-family: sans-serif;
+  justify-self: center;
+}
+
 .item-2 {
   grid-area: avatar;
   text-align: center;
@@ -66,16 +79,14 @@ nav {
   justify-self: center;
 }
 
-.item-3 {
-  grid-area: blurb;
-  text-align: center;
-  color: $lightpurple;
-  background-color: $vanilla;
-  border: 5px solid $greysea;
-  padding: 30px;
-  margin: 25px;
-  font-family: sans-serif;
-  justify-self: center;
+.avatar {
+  height: auto;
+  max-width: 225px;
+}
+
+.blurb {
+  height: auto;
+  size: large;
 }
 
 body {
@@ -104,24 +115,113 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 
     ' . . about . . '
-    '. about-2 about-2 about-2 .';
+    '. about-2 about-2 about-2 . ';
 }
 
-h3 {
-  grid-area: 'about';
+.about-header {
+  grid-area: about;
   font-family: $specialfont, serif;
   color: $lightpurple;
   background-color: $vanilla;
   border: 5px solid $greysea;
   padding: 30px;
   margin: 25px;
-  // justify-self: center;
+  text-justify: center;
 }
 
-h4 {
-  grid-area: 'about-2';
+.about-text {
+  grid-area: about-2;
   color: $lightpurple;
-  font-family: 'Helvetica';
+  font-family: 'Helvetica Light';
+}
+
+// contact me
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ' . . contact . . '
+    ' . . contact-text . . '
+    '. . profile-container . . ';
+}
+
+.contact {
+  grid-area: contact;
+  font-family: $specialfont, serif;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  text-align: center;
+}
+
+.profile-container {
+  grid-area: profile-container;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  max-width: 250px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-text {
+  grid-area: contact-text;
+  color: $lightpurple;
+  font-family: 'Helvetica Light';
+  text-align: center;
+  font-size: large;
+}
+
+.profile-img {
+  height: auto;
+  max-width: 225px;
+}
+
+// portfolio
+.port-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    'Portfolio Portfolio . '
+    'Project4 Project4 . '
+    'Project3 Project3 . '
+    'Project2 Project2 . '
+    'Project1 Project1 . ';
+}
+
+.portfolio {
+  grid-area: Portfolio;
+}
+.Project4 {
+  grid-area: Project4;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: auto;
+}
+
+.Project3 {
+  grid-area: Project3;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: auto;
+}
+
+.Project2 {
+  grid-area: Project2;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: auto;
+}
+
+.Project1 {
+  grid-area: Project1;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: auto;
 }
 
 // Footer
@@ -141,4 +241,12 @@ html, body { height: 100%;}
 body > footer {
   position: sticky;
   top: 500vh;
+}
+
+//responsiveness
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    display:flex;
+  }
 }

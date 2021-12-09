@@ -1,11 +1,11 @@
 function Portfolio(props) {
     return (
-        <div>
-            <h1>Portfolio</h1>
+        <div className="port-wrapper">
+            <h1 className="portfolio">Portfolio</h1>
             <div>
                 <div className="Project4">
                     <h2>SupplyLab</h2>
-                    <a href="https://supplylab.herokuapp.com/" target="_blank" rel="noreferrer">Click here</a>
+                    <a href="https://supplylab.herokuapp.com/" target="_blank" rel="noreferrer" alt="app link">Click here</a>
                     <p>A group project where I was full stack developer, user-stories, image research, bug-tracker, heroku deployment. An app to connect teachers who need supplies with local donors or businesses.</p>
                     <p>
                         <table>
@@ -43,7 +43,7 @@ function Portfolio(props) {
                 </div>
                 <div className="Project2">
                     <h2>Farmers Markets</h2>
-                    <a href="https://floating-ocean-08052.herokuapp.com/" target="_blank" rel="noreferrer">Click Here</a>
+                    <a href="https://floating-ocean-08052.herokuapp.com/" target="_blank" rel="noreferrer" alt="app link">Click Here</a>
                     <p>A full CRUD web application for finding local farmers markets in your area. Browse local farmers markets. Easily find addresses, dates of operation, hours, and examples of wares. Do you know a market that's not on our list? Add it to our site!</p>
                     <p>
                         <table>
@@ -61,7 +61,7 @@ function Portfolio(props) {
                 </div>
                 <div className="Project1">
                     <h2>Still-Life with Data and String</h2>
-                    <a href="https://dataandstring.netlify.app/" target="_blank" rel="noreferrer">Click here</a>
+                    <a href="https://dataandstring.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Click here</a>
                     <p>A basic search engine using an API from the Art Institute of Chicago. Technology allows viewers all over the world to enjoy fine art, up close and personally. The Intitute's API runs their website, mobile app, and gallery interactives as well. Artwork images are NOT in the API however - images are served on a separate API that is compliant with IIIF (International Image Interoperability Framework).</p>
                     <p>
                         <table>

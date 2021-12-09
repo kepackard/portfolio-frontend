@@ -1,25 +1,13 @@
 function Contact(props) {
     return (
-        <div>
-            <div>
-                <h1>Contact Me</h1>
-                <h4>kepackard@gmail.com</h4>
+        <div className="contact-container">
+            <div className="contact">
+                <h1 className="contact-header">Contact Me</h1>
             </div>
-            {/* <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form-control" aria-describedby="emailHelp" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea className="form-control" rows="5"></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-            </form> */}
+            <h4 className="contact-text">kepackard@gmail.com</h4>
+            <div className="profile-container">
+                <img className="profile-img" src="https://i.imgur.com/7NGcW6y.png" alt="profile"/>
+            </div>
         </div>
     )
 }

@@ -185,20 +185,27 @@ body {
 }
 
 // portfolio
+
 .port-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    'Portfolio Portfolio . '
-    'Project4 Project4 . '
-    'Project3 Project3 . '
-    'Project2 Project2 . '
-    'Project1 Project1 . ';
+    '. . Portfolio . . '
+    'Project4 Project4 Project4 Project4 Project4'
+    'Project3 Project3 Project3 Project3 Project3'
+    'Project2 Project2 Project2 Project2 Project2'
+    'Project1 Project1 Project1 Project1 Project1';
 }
 
 .portfolio {
   grid-area: Portfolio;
+  font-family: $specialfont, serif;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
 }
 .Project4 {
   grid-area: Project4;

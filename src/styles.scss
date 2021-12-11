@@ -73,6 +73,7 @@ body {
   margin: 25px;
   font-family: sans-serif;
   justify-self: center;
+  font-size: large;
 }
 
 .item-2 {
@@ -126,7 +127,7 @@ body {
   border: 5px solid $greysea;
   padding: 30px;
   margin: 25px;
-  text-justify: center;
+  text-align: center;
 }
 
 .about-text {
@@ -187,6 +188,8 @@ body {
 // portfolio
 
 .port-wrapper {
+  color:$lightpurple;
+  padding: 0 0 0 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -211,26 +214,34 @@ body {
 
 .Project4 {
   grid-area: Project4;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: auto;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  background-color: $vanilla;
 }
 
 .Project3 {
   grid-area: Project3;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: auto;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  background-color: $vanilla;
 }
 
 .Project2 {
   grid-area: Project2;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: auto;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  background-color: $vanilla;
 }
 
 .Project1 {
   grid-area: Project1;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: auto;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  background-color: $vanilla;
 }
 
 .resume {
@@ -256,6 +267,7 @@ body {
 .resume-img {
   grid-area: img;
   max-width: 100%;
+  margin: 0 0 50px 0;
 }
 
 // Footer

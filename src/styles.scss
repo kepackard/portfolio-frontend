@@ -6,7 +6,7 @@ $lightpurple: rgb(92,94,117);
 $foam: rgb(245, 241, 224);
 $vanilla: rgb(238, 231, 189);
 $greysea: rgb(196,205,202);
-$mainfont: 'Times';
+$mainfont: 'Helvetica';
 $specialfont: 'Suez One', serif;
 
 // <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,14 @@ nav {
 }
 
 // Main
+
+body {
+  background-color:$foam;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $mainfont, sans-serif;
+  // background-image: url('https://i.imgur.com/pwMiCg7.jpg');
+}
 
 .item-1 {
   grid-area: hi;
@@ -89,14 +97,6 @@ nav {
   size: large;
 }
 
-body {
-  background-color:$foam;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: $mainfont, serif;
-  // background-image: url('https://i.imgur.com/pwMiCg7.jpg');
-}
-
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -132,7 +132,7 @@ body {
 .about-text {
   grid-area: about-2;
   color: $lightpurple;
-  font-family: 'Helvetica Light';
+  font-family: 'Helvetica';
 }
 
 // contact me
@@ -206,7 +206,9 @@ body {
   border: 5px solid $greysea;
   padding: 20px;
   margin: 25px;
+  text-align: center;
 }
+
 .Project4 {
   grid-area: Project4;
   // grid-template-columns: 1fr 1fr 1fr;
@@ -229,6 +231,31 @@ body {
   grid-area: Project1;
   // grid-template-columns: 1fr 1fr 1fr;
   // grid-template-rows: auto;
+}
+
+.resume {
+  grid-area: resume;
+  font-family: $specialfont, serif;
+  color: $lightpurple;
+  background-color: $vanilla;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  text-align: center;
+}
+
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ' . . resume  . . '
+    ' . img img img . '
+} 
+
+.resume-img {
+  grid-area: img;
+  max-width: 100%;
 }
 
 // Footer

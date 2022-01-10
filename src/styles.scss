@@ -195,6 +195,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 
     '. . Portfolio . . '
+    'Project5 Project5 Project5 Project5 Project5'
     'Project4 Project4 Project4 Project4 Project4'
     'Project3 Project3 Project3 Project3 Project3'
     'Project2 Project2 Project2 Project2 Project2'
@@ -210,6 +211,14 @@ body {
   padding: 20px;
   margin: 25px;
   text-align: center;
+}
+
+.Project5 {
+  grid-area: Project5;
+  border: 5px solid $greysea;
+  padding: 20px;
+  margin: 25px;
+  background-color: $vanilla;
 }
 
 .Project4 {

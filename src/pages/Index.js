@@ -8,7 +8,7 @@ function Index(props) {
                 <div className="blurb">Software Dev | 15+ Years Project Management | History Buff</div>
             </div>
             <div className="item-2">
-                <img className="avatar" src="https://i.imgur.com/4GiXy8s.jpg" alt="avatar"/>
+                <img className="avatar" src="https://i.imgur.com/tzk3l8J.jpg" alt="avatar"/>
             </div>
         </div>
     )

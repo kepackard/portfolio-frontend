@@ -6,7 +6,7 @@ function Contact(props) {
             </div>
             <h4 className="contact-text">kepackard@gmail.com</h4>
             <div className="profile-container">
-                <img className="profile-img" src="https://i.imgur.com/7NGcW6y.png" alt="profile"/>
+                <img className="profile-img" src="https://i.imgur.com/tzk3l8J.jpg" alt="profile"/>
             </div>
         </div>
     )

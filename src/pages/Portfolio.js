@@ -5,7 +5,7 @@ function Portfolio(props) {
                 <div className="Project5">
                     <div className="proj-box">
                         <h2 classname="proj-name">Poem of the Day</h2>
-                        <a href="https://poemoftheday.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Launch Poem of the Day</a>
+                        {/* <a href="https://poemoftheday.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Launch Poem of the Day</a> */}
                         <p>A new poem each day generated from Poems.One API. HTML, CSS, JS, Jquery, Netlify.</p>
                         <p>
                             <table>
@@ -23,7 +23,7 @@ function Portfolio(props) {
                 <div className="Project4">
                     <div className="proj-box">
                     <h2 classname="proj-name">SupplyLab</h2>
-                    <a href="https://supplylab.herokuapp.com/" target="_blank" rel="noreferrer" alt="app link">Launch SupplyLab</a>
+                    {/* <a href="https://supplylab.netlify.app" target="_blank" rel="noreferrer" alt="app link">Launch SupplyLab</a> */}
                     <p>Django app enabling teachers to crowd-source school supplies. A group project where I was responsible for programming, user stories, image research, bug fixing, and deployment.</p>
                     <p>
                         <table>
@@ -41,7 +41,7 @@ function Portfolio(props) {
                 </div>
                 <div className="Project3">
                     <h2 classname="proj-name">You Are Here</h2>
-                    <a href="http://youarehere.netlify.app/" target="_blank" rel="noreferrer" alt="you-are-here">Launch You Are Here</a>
+                    {/* <a href="http://youarehere.netlify.app/" target="_blank" rel="noreferrer" alt="you-are-here">Launch You Are Here</a> */}
                     <p>You Are Here allows educators all over the country to create, share, and download lesson plans about the U.S. National Park System. Plans can be used for on-site field trips or to supplement classroom learning. All grades K-12 are covered, and subject matter ranges from Science to History, Social Studies, and English.</p>
                     <p>
                         <table>
@@ -61,7 +61,7 @@ function Portfolio(props) {
                 </div>
                 <div className="Project2">
                     <h2 classname="proj-name">Farmers Markets</h2>
-                    <a href="https://farmers-markets-08052.herokuapp.com/" target="_blank" rel="noreferrer" alt="app link">Launch Farmers Markets</a>
+                    {/* <a href="https://farmers-markets.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Launch Farmers Markets</a> */}
                     <p>A full CRUD web application for finding local farmers markets in your area. Browse local farmers markets. Easily find addresses, dates of operation, hours, and examples of wares. Do you know a market that's not on our list? Add it to our site!</p>
                     <p>
                         <table>
@@ -79,8 +79,9 @@ function Portfolio(props) {
                     <a href="https://github.com/kepackard/farmers-market" target="_blank" rel="noreferrer" alt="app link">Go to GitHub</a>
                 </div>
                 <div className="Project1">
-                    <h2 classname="proj-name">Still-Life with Data and String</h2>
-                    <a href="https://dataandstring.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Launch Still-Life with Data and String</a>
+                    <a href="https://dataandstring.netlify.app/" target="_blank" rel="noreferrer" alt="app link">
+                        <h2 classname="proj-name">Still-Life with Data and String</h2>
+                    </a>
                     <p>A basic search engine using an API from the Art Institute of Chicago. Technology allows viewers all over the world to enjoy fine art, up close and personally. The Intitute's API runs their website, mobile app, and gallery interactives as well.</p>
                     <p>
                         <table>

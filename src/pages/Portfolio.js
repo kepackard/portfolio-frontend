@@ -2,24 +2,6 @@ function Portfolio(props) {
     return (
         <div className="port-wrapper">
             <h1 className="portfolio">Portfolio</h1>
-                <div className="Project5">
-                    <div className="proj-box">
-                        <h2 classname="proj-name">Poem of the Day</h2>
-                        {/* <a href="https://poemoftheday.netlify.app/" target="_blank" rel="noreferrer" alt="app link">Launch Poem of the Day</a> */}
-                        <p>A new poem each day generated from Poems.One API. HTML, CSS, JS, Jquery, Netlify.</p>
-                        <p>
-                            <table>
-                                <tr><th>Technologies Used:</th></tr>
-                                <tr><td>HTML</td></tr>
-                                <tr><td>CSS</td></tr>
-                                <tr><td>Javascript</td></tr>
-                                <tr><td>JQuery</td></tr>
-                                <tr><td>Netlify</td></tr>
-                            </table>
-                        </p>
-                        <a href="https://github.com/kepackard/poetry-api" target="_blank" rel="noreferrer" alt="app link">Go to GitHub</a>
-                    </div>
-                </div>
                 <div className="Project4">
                     <div className="proj-box">
                     <h2 classname="proj-name">SupplyLab</h2>

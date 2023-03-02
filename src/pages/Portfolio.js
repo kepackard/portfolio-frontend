@@ -22,8 +22,7 @@ function Portfolio(props) {
                 </div>    
                 </div>
                 <div className="Project3">
-                    <h2 classname="proj-name">You Are Here</h2>
-                    {/* <a href="http://youarehere.netlify.app/" target="_blank" rel="noreferrer" alt="you-are-here">Launch You Are Here</a> */}
+                    <a href="http://youarehere.netlify.app/" target="_blank" rel="noreferrer" alt="you-are-here"><h2 classname="proj-name">You Are Here</h2></a>
                     <p>You Are Here allows educators all over the country to create, share, and download lesson plans about the U.S. National Park System. Plans can be used for on-site field trips or to supplement classroom learning. All grades K-12 are covered, and subject matter ranges from Science to History, Social Studies, and English.</p>
                     <p>
                         <table>
